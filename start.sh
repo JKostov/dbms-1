@@ -1,0 +1,1 @@
+docker run -d --restart unless-stopped - POSTGRES_USER=root -e POSTGRES_PASSWORD=dmbstest1232 -e POSTGRES_DB=dbms -p 5000:5432 postgres:12.2-alpine
