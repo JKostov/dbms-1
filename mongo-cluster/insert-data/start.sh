@@ -13,4 +13,4 @@ docker build --tag cluster-insert-data .
 docker kill cluster-insert-data_$CONTAINER_ID
 docker rm cluster-insert-data_$CONTAINER_ID
 
-docker run --network cluster_default --name cluster-insert-data_$CONTAINER_ID cluster-insert-data
+docker run --network mongo-cluster_default --name cluster-insert-data_$CONTAINER_ID cluster-insert-data
